@@ -1,0 +1,44 @@
+/* Default styles */
+
+.font-bold {
+    font-weight: bold;
+  }
+  
+  .text-3xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mt-5 {
+    margin-top: 1.25rem;
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  
+  
+  /* Media queries */
+  
+  @media (max-width: 768px) {
+    /* Styles for screens up to 768px width */
+    .text-3xl {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for screens up to 480px width */
+    .text-3xl {
+      font-size: 1.5rem;
+    }
+  
+    .mt-5 {
+      margin-top: 1rem;
+    }
+  }
+  

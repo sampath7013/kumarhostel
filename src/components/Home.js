@@ -1,8 +1,10 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import hostel1 from '../Images/hostel1.jpg'
-import hostel2 from '../Images/hostel2.jpg'
-import hostel3 from '../Images/hostel3.jpg'
+import hostel1 from '../Images/hostel1.jpg';
+import hostel2 from '../Images/hostel2.jpg';
+import hostel3 from '../Images/hostel3.jpg';
+import './Home.css';
+
 const images = [
   hostel1,
   hostel2,
@@ -11,8 +13,8 @@ const images = [
 
 const Hero = () => {
   return (
-    <div className="">
-      <div className="hidden md:block cursor-pointer  mt-3 ">
+    <div className="hero-container">
+      <div className="slider-container">
         <Splide
           options={{
             rewind: true,
@@ -27,13 +29,14 @@ const Hero = () => {
           {images.map((image, index) => {
             return (
               <SplideSlide key={index}>
-                <div className="ml-52"><img className='w-10/12 object-cover'src={image} alt="Banner" /></div>
+                <div className="image-container">
+                  <img className='image' src={image} alt="Banner" />
+                </div>
               </SplideSlide>
             );
           })}
         </Splide>
       </div>
-      
     </div>
   );
 };

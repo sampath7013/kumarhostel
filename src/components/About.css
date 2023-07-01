@@ -1,0 +1,36 @@
+/* About.css */
+.about-container {
+    margin-left: 12rem; /* ml-72 */
+    background-color: white; /* bg-white */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* shadow-2xl */
+    padding: 1rem; /* p-10 */
+    padding-right: 1.5rem; /* pr-12 */
+    border-radius: 2rem; /* rounded-3xl */
+    margin-right: 10rem; /* mr-60 */
+    margin-top: 7rem; /* mt-28 */
+    margin-bottom: 2.5rem; /* mb-10 */
+  }
+  
+  .about-title {
+    margin-left: 10rem; /* ml-60 */
+    font-weight: bold; /* font-bold */
+    font-size: 1.5rem; /* text-xl */
+    margin-bottom: 0.75rem; /* mb-3 */
+  }
+  
+  .about-description {
+    font-style: italic; /* italic */
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      margin: 2rem;
+      padding: 1.5rem;
+    }
+  
+    .about-title {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  

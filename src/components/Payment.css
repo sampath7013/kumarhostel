@@ -1,0 +1,74 @@
+/* Payment.css */
+.payment-container {
+    margin-left: 8rem; /* ml-80 */
+    margin-top: 3.5rem; /* mt-14 */
+    background-color: white;
+    border-radius: 1.5rem; /* rounded-xl */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow-2xl */
+    padding: 1.5rem; /* p-6 */
+    margin-right: 2.5rem; /* mr-40 */
+  }
+  
+  .payment-title {
+    font-weight: bold;
+    font-size: 2rem; /* text-3xl */
+    margin-bottom: 1rem; /* mb-2 */
+  }
+  
+  .payment-subtitle {
+    font-weight: bold;
+    font-size: 1.5rem; /* text-2xl */
+    margin-bottom: 1rem; /* mb-2 */
+  }
+  
+  .payment-label {
+    font-weight: bold;
+    font-size: 1.5rem; /* text-xl */
+  }
+  
+  .payment-input {
+    margin-top: 0.75rem; /* mt-3 */
+    text-align: center;
+    border: 2px solid red; /* border-2 */
+    padding: 0.5rem 1rem; /* p-2 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* shadow-lg */
+    outline: none;
+    width: 24rem; /* w-96 */
+  }
+  
+  .payment-select {
+    margin-left: 1rem; /* ml-4 */
+    background-color: transparent;
+    border-bottom: 2px solid #e38c9e; /* border-b-2 border-rose-400 */
+    padding: 0.5rem 1rem; /* p-2 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* shadow-lg */
+    outline: none;
+  }
+  
+  .payment-expiry {
+    display: flex;
+    margin-top: 0.25rem; /* mt-1 */
+  }
+  
+  .payment-cvv {
+    font-weight: bold;
+    font-size: 1.5rem; /* text-xl */
+    margin-top: 0.5rem; /* mt-2 */
+    margin-left: 0.5rem; /* ml-2 */
+  }
+  
+  .payment-button {
+    transition: all 1s; /* transition-all duration-1000 */
+    margin-top: 0.75rem; /* mt-3 */
+    margin-left: 0.5rem; /* ml-2 */
+    font-weight: bold;
+    hover: translateX(10px); /* hover:translate-x-10 */
+    color: #48bb78; /* text-green-700 */
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    background-color: transparent;
+    border: 2px solid #48bb78; /* border border-green-700 */
+    border-radius: 0.5rem; /* rounded-lg */
+    hover: background-color #48bb78; /* hover:bg-green-700 */
+    hover: color white; /* hover:text-white */
+  }
+  

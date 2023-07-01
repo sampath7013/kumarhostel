@@ -1,0 +1,80 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem; /* ml-96 */
+    margin-top: 6rem; /* mt-28 */
+    margin-right: 4.5rem; /* mr-72 */
+    background-color: white;
+    border-radius: 1.5rem; /* rounded-3xl */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* shadow-2xl */
+    padding: 2.5rem; /* p-10 */
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .input-field {
+    height: 2rem; /* h-8 */
+    margin-left: 0.5rem; /* ml-2 */
+    margin-top: 0.75rem; /* mt-3 */
+    border-radius: 0.75rem; /* rounded-xl */
+    text-align: center;
+    border: 0.125rem solid #FF0000; /* border-2 */
+    padding: 0.5rem; /* p-2 */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* shadow-lg */
+    outline: none;
+    width: 20rem; /* w-80 */
+  }
+  
+  .login-button {
+    transition: all 1s;
+    margin-top: 0.75rem; /* mt-3 */
+    margin-left: 0.5rem; /* ml-2 */
+    font-weight: bold;
+    color: #008000; /* text-green-700 */
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    background-color: transparent;
+    border: 0.125rem solid #008000; /* border */
+    border-radius: 0.375rem; /* rounded-lg */
+  }
+  
+  .login-button:hover {
+    transform: translateX(1rem); /* hover:translate-x-10 */
+    background-color: #008000; /* hover:bg-green-700 */
+    color: white; /* hover:text-white */
+  }
+  
+  .signup-text {
+    margin-top: 0.75rem; /* mt-3 */
+  }
+  
+  .signup-link {
+    color: #0000FF; /* text-blue-500 */
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline; /* hover:underline */
+  }
+  
+  @media (max-width: 767px) {
+    .login-container {
+      margin: 2rem;
+    }
+  
+    .input-field {
+      width: 100%;
+    }
+  }
+  

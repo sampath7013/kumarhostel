@@ -8,10 +8,12 @@ import Offers from './components/Offers';
 import Contactinfo from './components/Contactinfo';
 import About from './components/About';
 import Login from './components/Login';
+import SignupPage from './components/SignupPage';
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+         <Route path='/signup' element={<SignupPage/>}/>
          <Route path='/login' element={<Login/>}/>
          <Route path='/about' element={<About/>}/>
          <Route path='/contact' element={<Contactinfo/>}/>

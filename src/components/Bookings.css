@@ -1,0 +1,75 @@
+/* Bookings.css */
+.bookings-container {
+    margin-left: 20rem; /* ml-80 */
+    margin-top: 2.5rem; /* mt-10 */
+    margin-bottom: 1rem; /* mb-4 */
+    background-color: white; /* bg-white */
+    border-radius: 2rem; /* rounded-xl */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* shadow-2xl */
+    padding: 1.5rem; /* p-6 */
+    margin-right: 8rem; /* mr-40 */
+  }
+  
+  .bookings-container form {
+    /* Form styles */
+  }
+  
+  .bookings-container label {
+    /* Label styles */
+  }
+  
+  .bookings-container input {
+    /* Input styles */
+  }
+  
+  .bookings-container hr {
+    /* Horizontal rule styles */
+  }
+  
+  .bookings-container .flex {
+    /* Flex container styles */
+  }
+  
+  .bookings-container .flex > div {
+    /* Individual flex item styles */
+  }
+  
+  .bookings-container .font-bold {
+    /* Font bold styles */
+  }
+  
+  @media (max-width: 768px) {
+    .bookings-container {
+      margin: 2rem;
+      padding: 2rem;
+    }
+  
+    .bookings-container form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .bookings-container label,
+    .bookings-container input,
+    .bookings-container select {
+      width: 100%;
+    }
+  
+    .bookings-container .mt-3 {
+      margin-top: 1rem;
+    }
+  
+    .bookings-container .flex {
+      flex-direction: column;
+    }
+  
+    .bookings-container .flex > div {
+      margin-bottom: 1rem;
+    }
+  
+    .bookings-container .ml-4 {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+  

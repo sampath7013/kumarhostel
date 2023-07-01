@@ -1,0 +1,36 @@
+/* Hero.css */
+.hero-container {
+    margin-top: 1.5rem; /* mt-3 */
+  }
+  
+  .slider-container {
+    display: none; /* hidden md:block */
+    cursor: pointer;
+    margin-top: 1.5rem; /* mt-3 */
+  }
+  
+  .image-container {
+    margin-left: 5rem; /* ml-52 */
+  }
+  
+  .image {
+    width: 80%; /* w-10/12 */
+    object-fit: cover;
+  }
+  
+  @media (min-width: 768px) {
+    .slider-container {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .image-container {
+      margin-left: 0;
+    }
+  
+    .image {
+      width: 100%;
+    }
+  }
+  

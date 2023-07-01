@@ -1,0 +1,84 @@
+/* Navbar.css */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem; /* p-4 */
+    align-items: center;
+    background-color: #6600cc; /* bg-purple-950 */
+  }
+  
+  .navbar-logo {
+    width: 7.5rem; /* w-30 */
+    height: 5rem; /* h-20 */
+    border-radius: 0.5rem; /* rounded-md */
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 1rem; /* gap-4 */
+    background-color: #53657d; /* bg-slate-400 */
+    padding: 0.625rem; /* px-10 */
+    padding-top: 0.375rem; /* py-3 */
+    border-radius: 0.75rem; /* rounded-xl */
+  }
+  
+  .navbar-menu-item {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar-menu-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-menu-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+  }
+  
+  .navbar-button {
+    background-color: #ff0000; /* bg-red-600 */
+    color: white;
+    border-radius: 0.375rem; /* rounded-lg */
+    width: 5rem; /* w-20 */
+    height: 2.5rem; /* h-10 */
+    font-weight: bold;
+    border: 0.125rem solid #ff0000; /* border-2 */
+    margin-right: 0.5rem; /* mr-2 */
+  }
+  
+  .navbar-button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-button:hover {
+    color: #ff0000; /* hover:text-red-500 */
+    background-color: white; /* hover:bg-white */
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+  
+    .navbar-menu {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+  
+    .navbar-button {
+      margin-top: 1rem;
+    }
+  }
+  
