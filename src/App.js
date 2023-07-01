@@ -1,18 +1,27 @@
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Products from './components/Products';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import './index.css';
+import Bookings from './components/bookings';
+import Payment from './components/Payment';
+import Main from './Main';
+import Offers from './components/Offers';
+import Contactinfo from './components/Contactinfo';
+import About from './components/About';
+import Login from './components/Login';
 function App() {
   return (
-    <div className=''>
-      <Navbar/>
-      <Home/>
-      <Products/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+         <Route path='/login' element={<Login/>}/>
+         <Route path='/about' element={<About/>}/>
+         <Route path='/contact' element={<Contactinfo/>}/>
+         <Route path='/offers' element={<Offers/>}/>
+         <Route path='/payment' element={<Payment/>}/>
+         <Route path='/booking' element={<Bookings/>} />
+         <Route path='/offers' element={<Offers/>} />
+         <Route path='/' element={<Main/>} />
+       </Routes>
+    </BrowserRouter>
   );
 }
 

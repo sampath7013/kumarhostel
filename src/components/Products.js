@@ -2,6 +2,7 @@ import React from 'react'
 import hostel1 from '../Images/hostel1.jpg'
 import hostel2 from '../Images/hostel2.jpg'
 import hostel3 from '../Images/hostel3.jpg'
+import { Link } from 'react-router-dom';
 
 function Products() {
     const images = [
@@ -19,7 +20,7 @@ function Products() {
             {images.map((image)=>{
                 return <div className='relative'>
                     <img src={image} className='transition-all duration-500 w-80 h-60 rounded-md cursor-pointer hover:scale-110' alt='hostel'/>
-                    <button className='absolute bottom-8 font-bold bg-orange-400 left-4 p-2 rounded-md  hover:bg-white'>Book Now>>></button>
+                    <button className='absolute bottom-8 font-bold bg-orange-400 left-4 p-2 rounded-md  hover:bg-white'><Link to='/booking'>Book now>>></Link></button>
                 </div>
             })}
         </div>
