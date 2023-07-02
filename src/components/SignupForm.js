@@ -1,15 +1,31 @@
 // components/SignupForm.js
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './SignupForm.css'
+import {createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from '../firebase';
+import { useNavigate } from 'react-router-dom';
 
 const SignupForm = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate=useNavigate();
+
 
   const handleSignup = (e) => {
     e.preventDefault();
-    // Handle signup logic here (e.g., send data to backend, store locally)
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        // ...
+        navigate('/');
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
   };
 
   return (

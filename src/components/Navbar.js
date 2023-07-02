@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../Images/logo.png';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { AuthContext} from '../Store';
+import { signOut } from 'firebase/auth';
+import { auth } from '../firebase';
 
 function Navbar() {
+  const {currentUser}=useContext(AuthContext);
   const menuItems = [
     {
       name: 'Home',
@@ -38,8 +42,10 @@ function Navbar() {
         ))}
       </ul>
       <div className='navbar-buttons'>
-        <button className='navbar-button'><Link to='/login'>Login</Link></button>
-        <button className='navbar-button'><Link to='/signup'>SignUp</Link></button>
+        {!currentUser ? (<div><button className='navbar-button'><Link to='/login'>Sign In</Link></button>
+        <button className='navbar-button'><Link to='/signup'>SignUp</Link></button></div>):(
+          <button className='navbar-button' onClick={()=>{signOut(auth)}}>SignOut</button>
+        )}
       </div>
     </div>
   );

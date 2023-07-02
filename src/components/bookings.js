@@ -33,7 +33,7 @@ function Bookings() {
           <option value='Non Ac'>Non Ac</option>
         </select><br /><br />
 
-        <button className='transition-all duration-1000 mt-3 ml-2 font-bold hover:translate-x-10 text-green-700 px-4 py-2 bg-transparent border border-green-700 rounded-lg hover:bg-green-700 hover:text-white'>
+        <button className='transition-all duration-1000 mt-3 ml-2 font-bold hover:translate-x-10 text-green-700 px-2 py-2 bg-transparent border border-green-700 rounded-lg hover:bg-green-700 hover:text-white'>
           <Link to='/payment'>Book now >></Link>
         </button>
       </form>
