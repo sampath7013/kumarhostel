@@ -27,7 +27,7 @@ function Payment() {
         <label className='payment-cvv'>CVV</label>
         <input className='payment-input' type='password' placeholder='CVV' />
         <br></br>
-        <button className='transition-all duration-1000 mt-3 ml-2 font-bold hover:translate-x-10 text-green-700 px-2 py-2 bg-transparent border border-green-700 rounded-lg hover:bg-green-700 hover:text-white'>
+        <button className='transition-all duration-1000 mt-3 ml-2 font-bold hover:translate-x-10 text-green-700 px-2 py-2 bg-transparent border border-green-700 rounded-lg hover:bg-green-700 hover:text-white payment-button'>
           <Link to=''>Check Out >>></Link>
         </button>
       </form>
