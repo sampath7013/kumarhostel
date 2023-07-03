@@ -24,12 +24,12 @@ const SignupForm = () => {
   };
 
   return (
-    <div className='mt-24 ml-72 bg-white rounded-3xl shadow-2xl mr-96 p-7'>
+    <div className='mt-24 ml-72 bg-white rounded-3xl shadow-2xl mr-96 p-7 mobile-style'>
       <h1 className="font-bold text-3xl mb-2">Sign In</h1>
       <form onSubmit={handleSignin}>
         <label className="font-bold text-xl">Email:</label>
         <input
-          className="mt-5 text-center border-2 p-2 shadow-lg focus:outline border-red-800 h-6 w-64 rounded-lg"
+          className="mt-5 text-center border-2 p-2 shadow-lg focus:outline border-red-800 h-6 w-64 rounded-lg input-style"
           type="email"
           placeholder="Email"
           value={email}
@@ -38,7 +38,7 @@ const SignupForm = () => {
         <br></br>
         <label className="font-bold text-xl">Password:</label>
         <input
-          className="mt-5 text-center border-2 p-2 shadow-lg focus:outline border-red-800 h-6 w-64 rounded-lg"
+          className="mt-5 text-center border-2 p-2 shadow-lg focus:outline border-red-800 h-6 w-64 rounded-lg input-style"
           type="password"
           placeholder="Password"
           value={password}
@@ -47,7 +47,7 @@ const SignupForm = () => {
         <br></br>
         <button
           type="submit"
-          className="transition-all duration-1000 mt-5 ml-2 font-bold hover:translate-x-10 text-green-700 px-2 py-2 bg-transparent border border-green-700 rounded-lg hover:bg-green-700 hover:text-white"
+          className="transition-all duration-1000 mt-5 ml-2 font-bold hover:translate-x-10 text-green-700 px-2 py-2 bg-transparent border border-green-700 rounded-lg hover:bg-green-700 hover:text-white button-style"
         >
           Sign In
         </button>
