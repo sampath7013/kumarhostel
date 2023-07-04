@@ -9,10 +9,12 @@ import Contactinfo from './components/Contactinfo';
 import About from './components/About';
 import Login from './components/Login';
 import SignupPage from './components/SignupPage';
+import Feedbacksubmission from './components/Feedbacksubmission';
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+         <Route path='/feedbacksubmission' element={<Feedbacksubmission/>}/>
          <Route path='/signup' element={<SignupPage/>}/>
          <Route path='/login' element={<Login/>}/>
          <Route path='/about' element={<About/>}/>

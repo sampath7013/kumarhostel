@@ -5,6 +5,7 @@ import { addDoc, collection, doc, setDoc } from "firebase/firestore";
 import { db } from '../firebase';
 import { AuthContext } from '../Store';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Contact() {
@@ -19,11 +20,11 @@ function Contact() {
       // Create a new document in the 'feedback' collection in Firestore
       await addDoc(collection(db, 'feedback'), {
         name,
-        email:currentUser.email,
+        email,
         subject,
       });
 
-      navigate('/about');
+      navigate('/Feedbacksubmission');
       // Reset the form after successful submission
       console.log('Feedback submitted successfully!');
     } catch (error) {
@@ -42,10 +43,10 @@ function Contact() {
           <label className='font-bold text-rose-400 text-3xl'>Name</label>
           <input className='ml-16 bg-transparent text-center border-b-2 p-2 shadow-lg' type='text' placeholder='Enter the name' onChange={(e)=>setName(e.target.value)} /><br /><br />
           <label className='font-bold text-rose-400 text-3xl'>Email</label>
-          <input className='ml-16 bg-transparent text-center border-b-2 p-2 shadow-lg' type='email' placeholder='enter the email' value={currentUser.email}/><br /><br />
+          <input className='ml-16 bg-transparent text-center border-b-2 p-2 shadow-lg' type='email' placeholder='enter the email' value={email}onChange={(e)=>setEmail(e.target.value)}/><br /><br />
           <label className='font-bold text-rose-400 text-3xl'>Subject</label>
           <input className='ml-16 bg-transparent text-center border-b-2 p-2 shadow-lg' type='text' placeholder='Enter the feedback' onChange={(e)=>setSubject(e.target.value)}/><br /><br />
-          <button className='transition-all duration-1000 mt-8 font-bold hover:translate-x-10 text-green-700 px-2' onClick={handleSubmit}>Send Feedback >></button>
+          <button className='transition-all duration-1000 mt-8 font-bold hover:translate-x-10 text-green-700 px-2' onClick={handleSubmit}><Link to='/feedbacksubmission'>Send Feedback >></Link></button>
         </form>
       </div>
     </div>
