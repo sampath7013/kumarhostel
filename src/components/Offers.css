@@ -62,4 +62,72 @@
     background-color: white;
     color: #ff9900; /* hover:bg-white */
   }
-  
+  @media (max-width: 768px){
+    .offers-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem; /* mt-16 */
+    }
+    
+    .offers-heading {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .offers-title {
+      font-weight: bold;
+      font-size: 1.5rem; /* text-xl */
+      margin-left: 20px;
+      margin-right: 30px;
+    }
+    
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /* grid-cols-3 */
+      grid-gap: 2rem; /* ml-16 mt-14 */
+      justify-items: center;
+      margin-top: 2rem;
+    }
+    
+    .offer-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 1.5rem; /* rounded-3xl */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow-2xl */
+      padding: 1.25rem; /* pb-5 pt-4 pl-24 */
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    
+    .offer-title {
+      font-weight: bold;
+      font-size: 1.5rem; /* text-xl */
+    }
+    
+    .offer-description {
+      font-style: italic;
+    }
+    
+    .offer-action {
+      margin-top: 1rem; /* mt-4 */
+    }
+    
+    .offer-redeem-button {
+      font-weight: bold;
+      background-color: #ff9900; /* bg-orange-400 */
+      padding: 0.5rem 1rem; /* p-2 */
+      border-radius: 0.375rem; /* rounded-md */
+    }
+    
+    .offer-redeem-button a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .offer-redeem-button:hover {
+      background-color: white;
+      color: #ff9900; /* hover:bg-white */
+    }
+  }
